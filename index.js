@@ -4,4 +4,4 @@
 // render(
 //     <Scoreboard />,
 //     document.querySelector('#root');
-// )
+// );

@@ -4,10 +4,11 @@
     "description": "",
     "main": "App.js",
     "scripts": {
-        "start": "node index.js",
-        "start:dev": "nodemon",
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "mocha": "mocha --compilers js:babel-register",
+        "start": "node App.js",
+        "start:dev": "nodemon App.js",
+        "test": "mocha --compilers js:babel-register ./src/**/*.spec.js",
+        "testt": "echo \"Error: no test specified\" && exit 1",
+        "mochaa": "mocha --compilers js:babel-register",
         "mocha:test": "mocha --compilers js:babel-register --recursive ./test/"
     },
     "author": "Natalie Mastracci",
@@ -21,9 +22,11 @@
         "babel-preset-react-app": "^3.1.2",
         "babel-preset-stage-0": "^6.24.1",
         "babel-runtime": "^6.26.0",
+        "enzyme": "^3.6.0",
         "eslint": "^5.6.0",
         "eslint-plugin-react": "^7.11.1",
         "react": "^16.5.2",
+        "react-addons-test-utils": "^15.6.2",
         "react-dom": "^16.5.2",
         "react-hot-loader": "^4.3.10",
         "react-redux": "^5.0.7",
@@ -38,6 +41,8 @@
         "webpack-manifest-plugin": "^2.0.4"
     },
     "devDependencies": {
+        "babel-register": "^6.26.0",
+        "chai": "^4.1.2",
         "mocha": "^5.2.0",
         "nodemon": "^1.18.4"
     },
